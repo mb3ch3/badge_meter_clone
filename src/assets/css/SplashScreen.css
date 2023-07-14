@@ -1,0 +1,70 @@
+.splash-wrapper {
+    height: 100vh;
+    width: 100%;
+    background: red;
+    position: absolute;
+    z-index: 3;
+    animation: colortest 3s linear;
+    opacity: 0;
+}
+
+.splash-text {
+    position: absolute;
+    left: 5%;
+        right: 80%;
+        top: 5%;
+        font-size: 1.5rem;
+    animation: centerText 3s linear;
+}
+
+@keyframes colortest {
+    from {
+        background: red;
+        opacity:1;
+        display:block;
+    }
+
+    to {
+        background: green;
+        opacity: 0;
+        display:none;
+    }
+}
+
+@keyframes centerText {
+    0% {
+        left: 40%;
+        right: 40%;
+        top: 45%;
+    font-size: 3rem;
+        opacity:1;
+    }
+
+    /* 25% {
+        left: 30%;
+        right: 50%;
+        top: 35%;
+    }
+
+    50% {
+        left: 20%;
+        right: 60%;
+        top: 25%;
+        font-size: 2.5rem;
+    }
+
+    75% {
+        left: 10%;
+        right: 70%;
+        top: 15%;
+        font-size: 2rem;
+    } */
+
+    100% {
+        left: 5%;
+        right: 80%;
+        top: 5%;
+        font-size: 1.5rem;
+        opacity: 0;
+    }
+}
